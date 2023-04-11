@@ -12,7 +12,7 @@ class Mac_changer:
         get_mac = re.compile(r"\b([0-9A-Za-z]{2}:){5}[0-9A-Za-z]{2}\b")
         find_mac = get_mac.search(a).group(0)
         with open("config.txt","a") as config:
-            config.write(find_mac)
+            config.write(f"{self.networkinterface}= {find_mac}")
         config.close()
         return f"Your current mac is : {find_mac}"
     def new_mac(self):
@@ -22,9 +22,12 @@ class Mac_changer:
         return f"your Mac id has been changed to:- {self.Custom_mac}"
     @staticmethod
     def main(infomation):
-        user=Mac_changer(infomation.i,infomation.cm)
-        print(user.old_mac())
-        print(user.new_mac())
+        if infomation.cm=="retrive" or infomation.cm=="re":
+            pass
+        else:
+            user=Mac_changer(infomation.i,infomation.cm)
+            print(user.old_mac())
+            print(user.new_mac())
 if __name__ == '__main__':
     window=argparse.ArgumentParser()
     window.add_argument("-i",type=str,help="Use to declare the network interface")
