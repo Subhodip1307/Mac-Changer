@@ -1,3 +1,11 @@
+""" 
+This Code is created by Subhodip Sardar
+Git hub: https://github.com/Subhodip1307
+don't forget to read Readme file and the disclamer before using this code
+if you are a devoloper then you are welcome to update and pull request
+"""
+
+
 import argparse
 import sys
 import os
