@@ -2,25 +2,11 @@ import argparse
 import sys
 import os
 import re
-
+from deco import degine
 class Mac_changer:
     def __init__(self,interface,new_mac):
         self.networkinterface=interface
         self.Custom_mac=new_mac
-    # def restore_oldmac(self):
-    #    #return your old mac from config.txt
-    #    with open("config.txt", "r") as k:
-    #        a = k.readlines()
-    #    k.close()
-    #    mac=a[0].split('=')[1]
-    #    return mac
-    # def restore_old_interface(self):
-    #     #return your old mac's interface
-    #     with open("config.txt", "r") as k:
-    #         a = k.readlines()
-    #     k.close()
-    #     inter = a[0].split('=')[0]
-    #     return inter
     def retrivemac(self):
         with open("config.txt", "r") as k:
             a = k.readlines()
