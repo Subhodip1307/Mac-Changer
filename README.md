@@ -3,8 +3,13 @@ The "mac_changer" code is intended for educational and testing purposes only. An
 
 ## What is Mac_Changer
 
-This is tool to Mask your Mac address to any valid Mac adress waht you want and This tool is also able to restore your old Mac address at any time.
+This  tool will Mask your Mac address to any valid Mac adress what you want and This tool is also able to restore your old Mac address at any time or you can restart your computer.
 This tool can be use in various type of testing perpouse.
+ 
+ # Features
+ > Mac Masking
+ > Network Scaning (coming soon)
+ 
 ## Required Os
 Linux
 ## Tested on
